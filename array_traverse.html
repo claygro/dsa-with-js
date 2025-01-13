@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array traversing</title>
+  </head>
+  <body>
+    <input type="text" class="input" />
+    <button onclick="handleClick()">click me</button>
+  </body>
+  <script>
+    // for (let i = 0; i <script data.length; i++) {
+    //   console.log("array" + " " + i + " " + data[i]);
+    // }
+
+    function handleClick() {
+      let data = [3, 45, 3, 10, 90];
+      let el = document.querySelector(".input").value;
+      if (el > data.length) {
+        alert(data[el]);
+      } else {
+        alert("your value is out of range");
+      }
+    }
+  </script>
+</html>
